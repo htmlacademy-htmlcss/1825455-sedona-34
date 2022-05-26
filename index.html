@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>создан  на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="page_header">
+    <nav class="navigation">
+      <a class="navigation_logo" href="index.html">
+        <img class="page-header-logo" alt="Логотип компании по подбору гостиниц в Седоне" src="">
+      </a>
+      <ul class="navigation_list">
+        <li class="navigation_item">
+          <a class="navigation_link navigation-link-current" href="index.html">Главная</a>
+        </li>
+        <li class="navigation_item">
+          <!-- не знаю, стоит ли указывать ссыку на страницу, которой не существует. Возможно, здесь нужно указать ссылку на advantages index.html  -->
+          <a class="navigation_link" href="about.html">О Седоне</a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation_list navigation_user">
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually_hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually_hidden">Корзина</span>
+          </a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually_hidden">Вход</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main_index">
+    <!-- видела в уроках, что в h1 делают фразу "Седона — небольшой городок в Аризоне, заслуживающий большего!", но т.к.сайт коммерческий и главная задача продать бронирование, решила,что фраза "Отдых в городе Седона" лучше подходит -->
+    <h1 class="visually_hidden">Отдых в городе Седона</h1>
+    <div class="first_screen">
+      <!-- не поняла, как размечать изображения, поэтому пока оставила их в таком виде -->
+      <img class="first_screen_background" alt="Горный пейзаж" src="">
+      <!-- first_screen_welcome_text состоит из 3-х отдельных элементов. Вероятно,для верстки для других девайсов важно, чтобы они были по-отдельности. Ведь какие-то элементы нужно будет уменьших сильнее, а какие-то совсем убрать. Но т.к. у нас версткатолько для десктопа, оставила как есть -->
+      <img class="first_screen_welcome_text" alt="Приветственная надпись" src="">
+      <!-- понимаю, что элемент декоративный, но не поняла,как правильно их размечать -->
+      <img class="first_screen_divider" alt="Разделитель первого и второго экрана" src="">
+      <strong class="first_screen_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
+      <p class="first_screen_subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
+    <section class="advantages">
+      <h2 class="visually_hidden">Преимущества</h2>
+      <div class="advantages_image">
+        <ul class="advantages_image_list advantages_list_dark_blue">
+          <li class="advantages_image_item">
+            <h3 class="advantages_image_title">Настоящий городок</h3>
+            <p class="advantages_image_digit">— №1 —</p>
+            <p class="advantages_image_subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+        </ul>
+        <img class="advantages_image_picture" alt="Кафе в городе Седона" src="">
+      </div>
+      <div class="advantages_icon">
+        <ul class="advantages_icon_list advantages_list_light_blue">
+          <li сclass="advantages_icon_item">
+            <!-- понимаю, это что иконка, но не поняла, как правильно разметить этот элемент  -->
+            <img class="advantage_icon_picture" alt="Иконка дома" src="">
+            <h3 class="advantages_icon_title">Жильё</h3>
+            <p сclass="advantages_icon_subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+        </ul>
+        <ul class="advantages_icon_list advantages_list_white">
+          <li сclass="advantages_icon_item">
+            <!-- понимаю, это что иконка, но не поняла, как правильно разметить этот элемент  -->
+            <img class="advantage-icon_picture" alt="Иконка еды" src="">
+            <h3 class="advantages_icon_title">Еда</h3>
+            <p сclass="advantages_icon_subtitle">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+        <ul class="advantages_icon_list advantages_list_light_blue">
+          <li сclass="advantages_icon_item">
+            <!-- понимаю, это что иконка, но не поняла, как правильно разметить этот элемент  -->
+            <img class="advantage-icon_picture" alt="Иконка подарка" src="">
+            <h3 class="advantages_icon_title">Сувениры</h3>
+            <p сclass="advantages_icon_subtitle">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </div>
+      <div class="advantages_image">
+        <img class="advantages_image" alt="Мост дьявола в Седоне" src="">
+        <ul class="advantages_image_list advantages_list_dark_blue">
+          <li class="advantages_image_item">
+            <h3 class="advantages_image_title">Там есть мост дьявола</h3>
+            <p class="advantages_image_digit">— №2 —</p>
+            <p class="advantages_image_subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
+      </div>
+      <div class="advantages_number">
+        <ul class="advantages_number_list advantages_list_light_blue">
+          <li сclass="advantages_number_item">
+            <h3 class="advantages_number_title">Небольшая площадь</h3>
+            <p class="advantages_number_digit">— №3 —</p>
+            <p сclass="advantages_number_subtitle">Все достопримечательности находятся очень близко</p>
+          </li>
+        </ul>
+        <ul class="advantages_number_list advantages_list_blue">
+          <li сclass="advantages_number_item">
+            <h3 class="advantages_number_title">Красивая дорога</h3>
+            <p class="advantages_number_digit">— №4 —</p>
+            <p сclass="advantages_number_subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+        </ul>
+        <ul class="advantages_number_list advantages_list_light_blue">
+          <li сclass="advantages_number_item">
+            <h3 class="advantages_number_title">Мало туристов</h3>
+            <p class="advantages_number_digit">— №5 —</p>
+            <p сclass="advantages_number_subtitle">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- доделать и привязать к модальному окну-->
+    <section class="search">
+      <h2 class="visually_hidden">Поиск гостиницы</h2>
+      <div class="search_hotel">
+        <strong class="search_hotel_title">Заинтересовались?</strong>
+        <p class="search_hotel_subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="search_hotel_btn" type="button" name="button"></button>
+      </div>
+    </section>
+    <section class="newsletter">
+      <!-- Прослушать урок и проверить верстку кнопки -->
+      <h2 class="newsletter_title">Подпишитесь на рассылку</h2>
+      <p class="newsletter_subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter_form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="newsletter_email">Email</label>
+        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter_email" id="newsletter_email" required>
+        <button class="button newsletter_button" type="submit">
+          <span class="visually_hidden">Подписаться</span>
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
 </html>
